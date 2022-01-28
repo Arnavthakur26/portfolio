@@ -374,7 +374,7 @@ nav {
 }
 /* education section */
 .education {
-  background-image: url("images/education-bg.svg");
+  background-image: url("education-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-repeat-x: unset; */
