@@ -6,6 +6,9 @@ nav {
   top: 0;
   z-index: 100;
 }
+.mobile-nav {
+  display: none;
+}
 .left {
   padding: 10px 10px 0px 0px;
   padding-left: 5%;
@@ -51,6 +54,9 @@ nav {
 .right ul a:hover::after {
   visibility: visible;
   width: 100%;
+}
+.right span {
+  display: none;
 }
 /* --Description Area-- */
 .top-section {
@@ -124,8 +130,7 @@ nav {
   transform: rotate(47.18deg);
 }
 .desc {
-  display: grid;
-  grid-template-columns: 50rem 50rem;
+  display: flex;
   height: 70%;
   position: relative;
   justify-content: center;
@@ -264,7 +269,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   width: auto;
-  height: 500px;
+  height: auto;
 }
 .tech-gif {
   margin-left: 10%;
@@ -398,7 +403,9 @@ nav {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  width: 35em;
+  width: 45%;
+  max-width: 35rem;
+  min-width: 20rem;
   height: 17em;
   line-height: 2;
   background: #ffffff;
