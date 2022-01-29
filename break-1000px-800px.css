@@ -1,4 +1,17 @@
 @media only screen and (max-width: 1000px) {
+   .about {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+    width: auto;
+    padding: 100px 100px 100px 150px;
+    line-height: 40px;
+    font-size: 1.3rem;
+  }
+  .about h1 {
+    margin-bottom: 10px;
+  }
   .desc {
     flex-direction: column;
   }
