@@ -8,6 +8,9 @@
     <title>Arnav Thakur</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="util.css">
+    <link rel="stylesheet" href="break-1400px-1200px.css">
+    <link rel="stylesheet" href="break-1000px-800px.css">
+    <link rel="stylesheet" href="break-500px.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -19,7 +22,7 @@
 
 <body>
     <nav>
-        <div class="left"><img src="logo.png" alt="" class="logo"></div>
+        <div class="left"><img src="images/logo.png" alt="" class="logo"></div>
         <div class="right">
             <ul>
                 <a href="#home">
@@ -39,6 +42,27 @@
                 </a>
 
             </ul>
+            <span onclick="openNav()"><img src="menu-hamburger.svg" alt=""></span>
+        </div>
+        <div id="mob-nav" class="mobile-nav">
+            <span class="close-nav-btn" onclick="closeNav()"><img src="nav-close.svg" alt=""></span>
+            <div class="mobile-nav-content">
+                <a href="#home" onclick="closeNav()">
+                    Home
+                </a>
+                <a href="#skills" onclick="closeNav()">
+                    Skills
+                </a>
+                <a href="#experience" onclick="closeNav()">
+                    Experience
+                </a>
+                <a href="#projects" onclick="closeNav()">
+                    Projects
+                </a>
+                <a href="#">
+                    Contact Me
+                </a>
+            </div>
         </div>
     </nav>
     <section class="top-section">
@@ -220,11 +244,8 @@
         </div>
         <footer><small>Copyright &copy; Arnav Thakur. All Rights Reserved</small></footer>
     </section>
+    <script src="script.js"></script>
 </body>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-
-
-
 
 </html>
